@@ -7,11 +7,14 @@ import BookDetail from './components/book/BookDetail';
 function App() {
   // TODO: Add routes to books & views
   return (
-    <Switch>
-      <Route path="/books/:id" component={BookDetail} />
-      <Route path="/books" component={Book} />
-      <Route path="/" component={BookList} />
-    </Switch>
+    <>
+      <h1>Alchemy React Library</h1>
+      <Switch>
+        <Route path="/books/:id" component={BookDetail} />
+        <Route path="/books" component={Book} />
+        <Route path="/" component={BookList} />
+      </Switch>
+    </>
   );
 }
 
