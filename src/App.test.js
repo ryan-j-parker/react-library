@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import App from './App.js';
+import App from './App';
 
 it('renders a welcome message when signed out', async () => {
   const { container } = render(
@@ -9,5 +9,5 @@ it('renders a welcome message when signed out', async () => {
     </MemoryRouter>
   );
 
-  await screen.findByRole('list', { name: 'book list' });
+  await screen.findByText('Library Catalog');
 });

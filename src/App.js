@@ -3,6 +3,7 @@ import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import Book from './components/book/Book';
 import BookDetail from './components/book/BookDetail';
+import Home from './components/Home';
 
 function App() {
   // TODO: Add routes to books & views
@@ -11,8 +12,8 @@ function App() {
       <h1>Alchemy React Library</h1>
       <Switch>
         <Route path="/books/:id" component={BookDetail} />
-        <Route path="/books" component={Book} />
-        <Route path="/" component={BookList} />
+        <Route path="/books/" component={BookList} />
+        <Route path="/" component={Home} />
       </Switch>
     </>
   );
