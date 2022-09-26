@@ -21,8 +21,9 @@ function BookDetail() {
 
   return (
     <>
+      
+      <Book book={book} showDetail />
       <Link to="/"><button>Back to Library</button></Link>
-      <Book book={book} showDetail />;
     </>
   );
 }
