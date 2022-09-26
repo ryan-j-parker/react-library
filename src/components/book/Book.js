@@ -1,4 +1,4 @@
-import Author from '../author/Author';
+import Author from '../author/Author.js';
 import './Book.css';
 
 function Book({
