@@ -7,6 +7,8 @@ function BookDetail() {
   const { id } = useParams();
   const { book, loading, error } = useBookDetail(id);
 
+  // console.log('params', id);
+
   if (error)
     return (
       <>

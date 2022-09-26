@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getBooks } from '../services/books.js';
+import { getBooks } from '../services/books';
 
 export function useBooks() {
   const [error, setError] = useState('');
