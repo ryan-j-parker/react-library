@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-// import BookList from '../components/book/BookList';
 
 function Home() {
   return (
