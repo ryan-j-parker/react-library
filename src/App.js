@@ -1,7 +1,6 @@
 import BookList from './components/book/BookList';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import Book from './components/book/Book';
 import BookDetail from './components/book/BookDetail';
 import Home from './components/Home';
 
