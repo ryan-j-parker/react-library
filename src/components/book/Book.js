@@ -1,4 +1,4 @@
-import Author from '../author/Author';
+import Author from '../author/Author.js';
 import './Book.css';
 
 function Book({
@@ -24,5 +24,6 @@ function Book({
     </article>
   );
 }
+
 
 export default Book;

@@ -1,5 +1,6 @@
-import Book from '../../components/book/Book';
-import { useBooks } from '../../hooks/useBooks';
+import { Link } from 'react-router-dom';
+import Book from '../../components/book/Book.js';
+import { useBooks } from '../../hooks/useBooks.js';
 
 function BookList() {
   const { error, loading, books } = useBooks();
@@ -14,7 +15,9 @@ function BookList() {
     <ul className="book-list" aria-label="book list">
       {books.map((book) => (
         <li key={book.book_id}>
-          <Book book={book} />
+          <Link to={`/books/${book.book_id}`}>
+            <Book book={book} />
+          </Link>
         </li>
       ))}
     </ul>

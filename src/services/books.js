@@ -1,4 +1,4 @@
-import { client, checkError } from './client';
+import { client, checkError } from './client.js';
 
 export async function getBooks(query) {
   let request = client.from('books').select(`*, authors (*)`).order('title').limit(100);
